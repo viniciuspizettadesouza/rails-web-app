@@ -56,3 +56,85 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 5ms (Views: 4.2ms | Allocations: 3374)
 
 
+Started GET "/" for 127.0.0.1 at 2021-02-14 21:05:42 -0300
+  
+LoadError (cannot load such file -- /home/pizetta/git/rails-web-app/blog/config/routes.rb):
+  
+bootsnap (1.7.2) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:59:in `load'
+bootsnap (1.7.2) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:59:in `load'
+railties (6.1.2.1) lib/rails/application/routes_reloader.rb:47:in `block in load_paths'
+railties (6.1.2.1) lib/rails/application/routes_reloader.rb:47:in `each'
+railties (6.1.2.1) lib/rails/application/routes_reloader.rb:47:in `load_paths'
+railties (6.1.2.1) lib/rails/application/routes_reloader.rb:21:in `reload!'
+railties (6.1.2.1) lib/rails/application/routes_reloader.rb:35:in `block in updater'
+activesupport (6.1.2.1) lib/active_support/file_update_checker.rb:83:in `execute'
+railties (6.1.2.1) lib/rails/application/routes_reloader.rb:10:in `execute'
+railties (6.1.2.1) lib/rails/application/finisher.rb:208:in `block (2 levels) in <module:Finisher>'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:427:in `instance_exec'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:604:in `block (2 levels) in default_terminator'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:603:in `catch'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:603:in `block in default_terminator'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.2.1) lib/active_support/callbacks.rb:105:in `run_callbacks'
+activesupport (6.1.2.1) lib/active_support/execution_wrapper.rb:111:in `run!'
+activesupport (6.1.2.1) lib/active_support/reloader.rb:114:in `run!'
+activesupport (6.1.2.1) lib/active_support/execution_wrapper.rb:73:in `block in run!'
+activesupport (6.1.2.1) lib/active_support/execution_wrapper.rb:70:in `tap'
+activesupport (6.1.2.1) lib/active_support/execution_wrapper.rb:70:in `run!'
+activesupport (6.1.2.1) lib/active_support/reloader.rb:63:in `run!'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.2.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.2.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.2.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.2.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+MiniProfiler storage failure: No such file or directory @ rb_sysopen - /home/pizetta/git/rails-web-app/blog/tmp/miniprofiler/mp_timers_cyvy1xzul3qhgzgyiudy
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-02-14 21:05:42 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+MiniProfiler storage failure: No such file or directory @ rb_sysopen - /home/pizetta/git/rails-web-app/blog/tmp/miniprofiler/mp_timers_w82pyuqex7e4z6w5mwt3
+Started GET "/" for 127.0.0.1 at 2021-02-14 21:06:00 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 216)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 5207)
+Completed 200 OK in 28ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 7791)
+
+
